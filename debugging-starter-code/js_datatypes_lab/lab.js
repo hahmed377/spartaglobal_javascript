@@ -29,5 +29,5 @@ var sentence_length = sentence.length;
 // Research how to create a JSON object called person
 // Use the person object tests to add the correct data
 var person = {
-  "name": first_name, "friends": names_array, "age": age, "phone_number":phone_number, "best_friend": friend, "quote": sentence
+  name: first_name, friends: names_array, age: age, phone_number:phone_number, best_friend: friend, quote: sentence
 };
