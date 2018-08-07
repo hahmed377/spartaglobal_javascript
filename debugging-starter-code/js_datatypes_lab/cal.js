@@ -1,29 +1,24 @@
 
-var num1 = prompt ("please enter first number");
+var num1 = parseInt (prompt ("please enter first number"));
+// First number
 var operator = prompt ("please enter your operator")
-var num2 = prompt ("please enter second number");
+// choose operator
+var num2 = parseInt (prompt ("please enter second number"));
+// enter the second number
 
-console.log (num1);
-console.log (operator);
-console.log (num2);
-
-a = parseInt(num1);
-b = parseInt(num2);
-
-
+// This is going to store the num1, num2
 if (operator == "+") {
-  num1 + num2
-  console.log (a+b);
+  console.log (num1+num2);
 }
 if (operator == "-") {
-  num1 - num2
-  console.log (a-b);
+
+  console.log (num1-num2);
 }
 if (operator == "*") {
-  num1 * num2
-  console.log (a*b);
+
+  console.log (num1*num2);
 }
 if (operator == "/") {
-  num1 / num2
-  console.log (a/b);
+
+  console.log (num1/num2);
 }
