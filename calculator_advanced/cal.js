@@ -61,13 +61,13 @@ function advanCal(option){
 
   }
 }
-// function power(){
-// var num1 = parseFloat(prompt("enter first number"));
-// var num2 = parseFloat(prompt("enter second number"));
-// result = num1 num2;
-//   result = Math.pow(result);
-//   alert(result);
-// }
+ function power(){
+ var num1 = parseFloat(prompt("enter first number"));
+ var num2 = parseFloat(prompt("enter second number"));
+
+   result = Math.pow(num1, num2);
+   alert(result);
+ }
 function squareRoot(){
   var num3 = parseFloat(prompt("enter number to see square root"));
   num3 = Math.sqrt(num3);
@@ -92,7 +92,7 @@ function calBmiMetric(){
   var height = parseFloat(prompt("Enter height in cm:"))
   var weight = parseFloat(prompt("Enter weight in kg:"))
   var height2 = (height/100);
-  alert("Your bmi is : "weight/(height2 * height2));
+  alert(weight/(height2 * height2));
 
 }
 function calBmiImperial(){
@@ -103,5 +103,5 @@ function calBmiImperial(){
   if (weight=="lb") weight/=2.2;
 
   var bmi = Math.round(weight / Math.pow(height, 2) * 10000);
-  alert("Your bmi is: " + bmi);
+  alert("You're bmi is: " + bmi);
 }
