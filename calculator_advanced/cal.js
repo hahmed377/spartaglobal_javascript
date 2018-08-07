@@ -11,7 +11,7 @@ switch (setting) {
     advanCal();
     break;
   case "i":
-    console.log("hello bmi");
+    bmiCal();
     break;
   case "t":
     console.log("hello trip");
@@ -73,3 +73,29 @@ function squareRoot(){
   num3 = Math.sqrt(num3);
   alert(num3);
 }
+function bmiCal(){
+  var choice = prompt("choose 1 for imperial or 2 for metric");
+  switch (choice) {
+    case "1":
+      break;
+    case "2":
+    calBmiMetric();
+
+      break;
+
+    default:
+
+  }
+}
+function calBmiMetric(){
+  var height = prompt("Enter your height in inches");
+  var weight = prompt("Enter your weight in pounds");
+
+  if (height=="inches") height/=39.3700787;
+  if (weight=="lb") weight/=2.20462;
+
+  var bmi = weight/Math.pow(height,2);
+  alert("You're bmi is: " + bmi);
+
+}
+calBmiImperial
