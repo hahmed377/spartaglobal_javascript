@@ -8,7 +8,7 @@ switch (setting) {
     BasicCal();
     break;
   case "a":
-    console.log("hello advanced");
+    advanCal();
     break;
   case "i":
     console.log("hello bmi");
@@ -39,10 +39,37 @@ function BasicCal(num1, num2) {
   else if (operator == "*") {
     alert(num1 * num2);
 
-    console.log (num1*num2);
+
   }
   else if (operator == "/") {
 
     alert(num1 / num2);
   }
+}
+function advanCal(option){
+  var option = (prompt("Press 1 for Power or 2 for square root"));
+  switch (option) {
+    case "1":
+       power();
+    break;
+    case "2":
+      squareRoot();
+
+      break;
+    default:
+    alert("not working")
+
+  }
+}
+// function power(){
+// var num1 = parseFloat(prompt("enter first number"));
+// var num2 = parseFloat(prompt("enter second number"));
+// result = num1 num2;
+//   result = Math.pow(result);
+//   alert(result);
+// }
+function squareRoot(){
+  var num3 = parseFloat(prompt("enter number to see square root"));
+  num3 = Math.sqrt(num3);
+  alert(num3);
 }
