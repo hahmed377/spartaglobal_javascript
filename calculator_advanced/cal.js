@@ -77,6 +77,7 @@ function bmiCal(){
   var choice = prompt("choose 1 for imperial or 2 for metric");
   switch (choice) {
     case "1":
+    calBmiImperial();
       break;
     case "2":
     calBmiMetric();
@@ -88,14 +89,19 @@ function bmiCal(){
   }
 }
 function calBmiMetric(){
+  var height = parseFloat(prompt("Enter height in cm:"))
+  var weight = parseFloat(prompt("Enter weight in kg:"))
+  var height2 = (height/100);
+  alert("Your bmi is : "weight/(height2 * height2));
+
+}
+function calBmiImperial(){
   var height = prompt("Enter your height in inches");
   var weight = prompt("Enter your weight in pounds");
 
-  if (height=="inches") height/=39.3700787;
-  if (weight=="lb") weight/=2.20462;
+  if (height=="inches") height/=2.5;
+  if (weight=="lb") weight/=2.2;
 
-  var bmi = weight/Math.pow(height,2);
-  alert("You're bmi is: " + bmi);
-
+  var bmi = Math.round(weight / Math.pow(height, 2) * 10000);
+  alert("Your bmi is: " + bmi);
 }
-calBmiImperial
